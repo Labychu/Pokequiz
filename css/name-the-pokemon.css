@@ -1,0 +1,135 @@
+.pre-game {
+    width: 100%;
+    text-align: center;
+}
+
+.pre-game h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.pre-game button {
+    font-size: 2em;
+}
+
+.content {
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    background-color: #6AA29C;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in 0.35s;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.content h1 {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    top: -2rem;
+    position: relative;
+    margin-bottom: 0;
+    height: 15vh;
+}
+
+.round-announcer {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -6rem;
+    transition: all ease-in-out 0.35;
+    z-index: -100;
+    font-family: 'Bree Serif', serif;
+}
+
+.round-announcer img {
+    height: 12rem;
+    width: 12rem;
+}
+
+.question {
+    margin-top: -1.5rem;
+    margin-bottom: -5px;
+    display: inline-block;
+    width: 99%;
+    height: 50vh;
+    background-image: url('../image/Waifu\ Volcarona.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.option-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 35vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} 
+
+.option {
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.25em;
+    border: none;
+    transition: all ease-in-out 0.35s;
+}
+
+.option.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.option.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.option.three {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.option.four {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.option:hover {
+    opacity: 0.5;
+}
+
+/* Animation Zone!!!!!!!!!!!!!! */
+/* ---------------------------------------- */
+
+.content.start {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.round-announcer.annouce {
+    opacity: 1;
+    z-index: 10;
+}
+
+.option.true-answer {
+    background-color: green;
+}
+
+.option.false-answer {
+    background-color: red;
+}

@@ -1,0 +1,30 @@
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    font-size: 1.5em;
+    color: black;
+    background-color: #fff;
+    border: 3px solid black;
+    height: 3rem;
+    width: 15rem;
+    margin-top: 1rem;
+    transition: all ease-in-out 0.2s;
+    font-family: 'Bree Serif', serif;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    color: white;
+    background-color: #2FD8C7;
+    border: none;
+}
